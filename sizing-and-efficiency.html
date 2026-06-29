@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to size a combi boiler for heating and hot water, understand kW ratings, flow temperature, modulating output, and energy-saving optimisation.">
+  <title>Combi Boiler Sizing &amp; Energy Efficiency — CombiBoiler.com</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/logo-mark.svg" class="logo-mark navbar-logo" width="44" height="44" alt="">
+        <span class="navbar-title">CombiBoiler<span class="logo-tld">.com</span></span>
+      </a>
+      <div class="navbar-actions">
+        <button class="navbar-toggle" type="button" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false" aria-controls="navbar-menu">
+          <span class="navbar-toggle-icon" aria-hidden="true"><span class="navbar-toggle-bar"></span></span>
+        </button>
+        <ul id="navbar-menu" class="navbar-menu">
+          <li><a href="what-is-a-combi-boiler.html">What is a combi?</a></li>
+          <li><a href="choosing-a-combi-boiler.html">Choosing</a></li>
+          <li><a href="sizing-and-efficiency.html" aria-current="page">Sizing</a></li>
+          <li><a href="https://myboiler.com" rel="noopener">MyBoiler.com</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <a class="back-link" href="index.html">&larr; Back to home</a>
+        <h1>Combi Boiler Sizing &amp; Energy Efficiency</h1>
+        <p class="page-intro">Correct sizing and sensible flow-temperature settings are among the most effective ways to cut gas bills and improve reliability.</p>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="container prose prose-wide">
+        <h2>Efficiency basics</h2>
+        <p>Boiler efficiency is simply how much useful heat you get for each pound spent on gas. An old G-rated boiler might deliver around 50p of heat per £1 input; a modern A-rated condensing boiler delivers roughly 90p or more. Newer boilers waste less heat up the flue and put more into your radiators and hot water.</p>
+
+        <h2>Boiler power and flow temperature</h2>
+        <p>Boilers are sized in kW (metric) of output — sometimes still quoted in BTU (imperial). On combination boilers the headline kW figure usually applies to <strong>hot water</strong>, while heating output is often lower. For example a 36&nbsp;kW combi may deliver 36&nbsp;kW in hot-water mode but only 30&nbsp;kW in heating mode — check the manufacturer's specification.</p>
+        <p><strong>Flow temperature</strong> is the temperature of water leaving the boiler into the heating circuit. The higher the flow temperature, the higher the heat output from radiators. Think of kW as engine size and flow temperature as road speed.</p>
+
+        <h2>Sizing a combi boiler</h2>
+        <p>Sizing correctly is essential for efficiency and reliability. Oversizing means a more expensive boiler and higher long-term running costs; undersizing means the system cannot meet demand on cold days or when multiple taps run.</p>
+        <p>To size properly:</p>
+        <ol>
+          <li>Calculate property <strong>heat loss</strong> in kW — this sets your heating requirement.</li>
+          <li>For combi boilers, determine the <strong>flow rate and temperature rise</strong> needed for hot water — this sets the hot-water kW.</li>
+          <li>Allow headroom for future improvements (better insulation, new radiators) without gross oversizing.</li>
+        </ol>
+        <p>It is common to need only 12&nbsp;kW for space heating but 31&nbsp;kW or more for domestic hot water on the same appliance.</p>
+
+        <h2>Modulating boilers</h2>
+        <p>Modern A-rated boilers can turn their maximum output down manually and automatically. A 31&nbsp;kW combi might provide 24&nbsp;kW of heating that can be reduced to 12&nbsp;kW when less heat is required — reducing cycling and improving comfort.</p>
+
+        <h2>How to optimise your combi</h2>
+        <p>With the above in mind you can:</p>
+        <ul>
+          <li>Set the boiler's maximum output to match what the property actually needs.</li>
+          <li>Lower the heating flow temperature so radiators emit less heat per cycle — the house may take slightly longer to warm up but will heat more evenly and allow room thermostats time to react.</li>
+          <li>Reduce hot-water flow temperature where comfortable to lower gas use for showers and taps.</li>
+        </ul>
+        <p>Lowering flow temperature on a condensing combi also keeps the boiler in condensing mode more often, which can save up to around 8% on heating gas use. See <a href="https://hub.myboiler.com/combi-boiler/reducing-the-flow-temperature-for-a-condensing-combi-boiler-for-upto-8-percent-saving-on-your-gas-heating-bills/">reducing flow temperature for combi savings</a> on MyBoiler Hub.</p>
+
+        <h2>Advanced optimisation</h2>
+        <p>The most efficient setup pairs <a href="https://hub.myboiler.com/opentherm-compatible-controls/">OpenTherm or modulating controls</a> with a modulating A-rated boiler. Room thermostats tell the boiler what flow temperature to target and the boiler modulates its output to match real demand.</p>
+
+        <p class="disclaimer">Content adapted from <a href="https://hub.myboiler.com/boiler-energy-efficiency/">Boiler Energy Efficiency</a> on Hub.MyBoiler.com. Adjustment of boiler settings should be carried out by a competent heating engineer if you are unsure.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> CombiBoiler.com — an extension of <a href="https://myboiler.com" rel="noopener">MyBoiler.com</a></p>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="what-is-a-combi-boiler.html">What is a combi?</a>
+        <a href="choosing-a-combi-boiler.html">Choosing</a>
+        <a href="https://myboiler.com" rel="noopener">MyBoiler.com</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
