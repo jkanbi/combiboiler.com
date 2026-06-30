@@ -27,6 +27,19 @@ python -m http.server 8080
 
 Then visit http://localhost:8080
 
+
+### Custom domain DNS
+
+Point `boilerservice.com` at GitHub Pages:
+
+| Type | Name | Value |
+|------|------|-------|
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| CNAME | `www` | `jkanbi.github.io` |
+
 ## GitHub Pages deployment
 
 ### 1. Create the GitHub repository
