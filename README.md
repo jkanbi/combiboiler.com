@@ -10,7 +10,7 @@ what-is-a-combi-boiler.html   Definition, pros & cons
 choosing-a-combi-boiler.html  Choosing, controls, installation best practice
 sizing-and-efficiency.html    kW sizing, flow temperature, optimisation
 styles.css                    Shared stylesheet (BoilerService.com design language)
-js/navbar.js                  Mobile navigation
+js/site-chrome.js             Shared header, footer, and mobile navigation (edit nav here)
 img/                          Logo mark and combiboiler.jpg
 favicon.svg
 CNAME                         Custom domain for GitHub Pages
@@ -26,6 +26,12 @@ python -m http.server 8080
 ```
 
 Then visit http://localhost:8080
+
+## Shared navigation
+
+Header and footer are defined once in `js/site-chrome.js`. Each page sets the active nav item via `data-active-nav` on the `<body>` tag (e.g. `data-active-nav="sizing"`). The homepage uses `data-logo="svg"` for the SVG logo; other pages use the JPG logo by default.
+
+To add a nav link, edit the `NAV_ITEMS` and `FOOTER_LINKS` arrays in `js/site-chrome.js` only.
 
 
 ### Custom domain DNS

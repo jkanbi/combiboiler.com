@@ -10,27 +10,8 @@
   <link rel="icon" href="favicon-48.png" type="image/png" sizes="48x48">
   <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
 </head>
-<body>
-  <header class="site-header">
-    <nav class="navbar" aria-label="Main">
-      <a href="index.html" class="navbar-brand">
-        <img src="img/combiboiler.jpg" class="logo-mark navbar-logo" width="44" height="44" alt="">
-        <span class="navbar-title">CombiBoiler<span class="logo-tld">.com</span></span>
-      </a>
-      <div class="navbar-actions">
-        <button class="navbar-toggle" type="button" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false" aria-controls="navbar-menu">
-          <span class="navbar-toggle-icon" aria-hidden="true"><span class="navbar-toggle-bar"></span></span>
-        </button>
-        <ul id="navbar-menu" class="navbar-menu">
-          <li><a href="what-is-a-combi-boiler.html">What is a combi?</a></li>
-          <li><a href="choosing-a-combi-boiler.html" aria-current="page">Choosing</a></li>
-          <li><a href="sizing-and-efficiency.html">Sizing</a></li>
-          <li><a href="combi-boiler-installation-best-practice.html">Installation</a></li>
-          <li><a href="reduce-combi-flow-temperature.html">Save energy</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+<body data-active-nav="choosing">
+  <div id="site-header"></div>
 
   <main>
     <section class="page-hero">
@@ -82,21 +63,8 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> CombiBoiler.com — an extension of <a href="https://myboiler.com" rel="noopener">MyBoiler.com</a></p>
-      <nav aria-label="Footer">
-        <a href="index.html">Home</a>
-        <a href="what-is-a-combi-boiler.html">What is a combi?</a>
-        <a href="sizing-and-efficiency.html">Sizing</a>
-        <a href="combi-boiler-installation-best-practice.html">Installation</a>
-        <a href="reduce-combi-flow-temperature.html">Save energy</a>
-        <a href="https://myboiler.com" rel="noopener">MyBoiler.com</a>
-      </nav>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
-  <script src="js/navbar.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/site-chrome.js"></script>
 </body>
 </html>
