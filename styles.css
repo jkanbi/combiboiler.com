@@ -194,7 +194,9 @@ a:hover {
   align-items: center;
   min-height: 2.75rem;
   color: var(--text);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.2em;
   font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.2;
@@ -202,8 +204,8 @@ a:hover {
 
 .navbar-menu a:hover,
 .navbar-menu a[aria-current="page"] {
-  text-decoration: underline;
-  font-weight: 600;
+  color: var(--link);
+  text-decoration-color: currentColor;
 }
 
 @media screen and (max-width: 768px) {
