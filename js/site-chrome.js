@@ -3,7 +3,7 @@
 
   var NAV_ITEMS = [
     { id: "what-is", href: "what-is-a-combi-boiler.html", label: "What is a combi?" },
-    { id: "choosing", href: "choosing-a-combi-boiler.html", label: "Choosing" },
+    { id: "choosing", href: "choosing-a-combi-boiler.html", label: "New Combi" },
     { id: "sizing", href: "sizing-and-efficiency.html", label: "Sizing" },
     { id: "installation", href: "combi-boiler-installation-best-practice.html", label: "Installation" },
     { id: "save-energy", href: "reduce-combi-flow-temperature.html", label: "Save energy" }
@@ -12,7 +12,7 @@
   var FOOTER_LINKS = [
     { href: "index.html", label: "Home" },
     { href: "what-is-a-combi-boiler.html", label: "What is a combi?" },
-    { href: "choosing-a-combi-boiler.html", label: "Choosing" },
+    { href: "choosing-a-combi-boiler.html", label: "New Combi" },
     { href: "sizing-and-efficiency.html", label: "Sizing" },
     { href: "combi-boiler-installation-best-practice.html", label: "Installation" },
     { href: "reduce-combi-flow-temperature.html", label: "Save energy" },
