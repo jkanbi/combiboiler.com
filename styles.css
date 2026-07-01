@@ -586,6 +586,24 @@ h2 {
   text-align: center;
 }
 
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin: 1.25rem 0 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #000;
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .disclaimer {
   margin-top: 2rem;
   padding: 1rem 1.15rem;
