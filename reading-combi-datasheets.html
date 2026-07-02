@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to read combi boiler datasheets: DHW flow rate at ΔT, heating kW vs hot water kW, modulation ratio, and mains pressure testing before install.">
+  <title>Reading Combi Datasheets &amp; Mains Flow Testing — CombiBoiler.com</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <a class="back-link" href="index.html">&larr; Back to home</a>
+        <h1>Reading Combi Datasheets &amp; Mains Flow Testing</h1>
+        <p class="page-intro">Headline kW ratings mislead — learn how to specify a combi from manufacturer data and confirm the mains supply can deliver what the household expects.</p>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="container prose prose-wide">
+        <p>A “35&nbsp;kW combi” badge tells you little about whether the shower will perform. Correct specification uses the <strong>technical datasheet</strong>: separate heating and DHW outputs, flow rates at defined temperature rises, minimum and maximum modulation, and mains pressure requirements.</p>
+
+        <h2>Heating kW vs hot water kW</h2>
+        <p>On most combis the marketing kW figure refers to <strong>domestic hot water</strong> output. Space heating output is often lower — sometimes substantially. Example: a unit marketed as 35&nbsp;kW might deliver 35&nbsp;kW for DHW but only 24–30&nbsp;kW to radiators. Always read both figures against your heat-loss calculation.</p>
+        <p>For heating, compare maximum and <strong>minimum</strong> modulation range. A 24&nbsp;kW boiler that can turn down to 5&nbsp;kW suits a well-insulated home better than one that only modulates to 12&nbsp;kW.</p>
+
+        <h2>DHW flow rate and ΔT</h2>
+        <p>Manufacturers quote hot-water flow in litres per minute (L/min) at a specific <strong>temperature rise (ΔT)</strong> — typically 30&nbsp;K or 35&nbsp;K. That means:</p>
+        <ul>
+          <li>Flow quoted at 35&nbsp;K ΔT: if incoming mains is 10&nbsp;&deg;C, the boiler must raise it to 45&nbsp;&deg;C at that flow rate.</li>
+          <li>Winter mains at 5&nbsp;&deg;C needs more kW for the same outlet temperature — performance drops unless flow is reduced.</li>
+        </ul>
+        <p><strong>Example:</strong> A datasheet states 12.4&nbsp;L/min at ΔT&nbsp;=&nbsp;35&nbsp;K. That is a reasonable single-shower figure. A rain shower needing 15&nbsp;L/min at 42&nbsp;&deg;C may exceed what the boiler can do in midwinter — even if the headline kW looks adequate.</p>
+
+        <h2>Relating kW to flow and ΔT</h2>
+        <p>A useful approximation for specification:</p>
+        <p><strong>DHW kW ≈ 0.07 × flow (L/min) × ΔT (K)</strong></p>
+        <p>So 12&nbsp;L/min with a 35&nbsp;K rise needs roughly 0.07 × 12 × 35 ≈ 29&nbsp;kW of hot-water output. Cross-check this against the datasheet DHW kW column.</p>
+
+        <h2>What else to read on the datasheet</h2>
+        <ul>
+          <li><strong>Minimum DHW flow to fire</strong> — Boilers need a minimum flow to detect hot-water demand; low basin flows can cause cycling.</li>
+          <li><strong>Maximum heating flow temperature</strong> and recommended operating range.</li>
+          <li><strong>Mains pressure range</strong> — Minimum dynamic pressure at peak flow is critical; insufficient pressure causes poor DHW and fault codes.</li>
+          <li><strong>Gas input kW</strong> — For gas pipe and meter sizing.</li>
+          <li><strong>Electrical consumption</strong> — For fused spur rating.</li>
+          <li><strong>Flue and clearance dimensions</strong> — For siting surveys.</li>
+        </ul>
+
+        <h2>Mains dynamic pressure and flow testing</h2>
+        <p>Static pressure at a tap (no flow) is not enough. Before promising combi performance, measure under realistic load:</p>
+        <ol>
+          <li>Record static mains pressure at the incoming stop tap or cold kitchen tap.</li>
+          <li>Open the cold tap fully and measure <strong>dynamic pressure</strong> (pressure while flowing) — or use a flow cup to measure L/min at that outlet.</li>
+          <li>Repeat with other outlets that might run together (e.g. kitchen + bathroom).</li>
+          <li>Compare results to the boiler manufacturer’s minimum inlet pressure at maximum DHW flow.</li>
+        </ol>
+        <p>If dynamic pressure collapses when flow increases, the mains supply or internal pipework may be restrictive. Fitting a larger combi will not fix it — stored hot water or mains upgrade may be needed.</p>
+
+        <h2>Common specification mistakes</h2>
+        <ul>
+          <li>Selecting boiler kW from old boiler badge without heat-loss calculation.</li>
+          <li>Ignoring winter mains temperature in DHW sizing.</li>
+          <li>Assuming marketing flow figures apply at shower temperature (40&nbsp;°C+) rather than datasheet ΔT.</li>
+          <li>Oversizing heating kW “to be safe” — causes cycling and reduced condensing time.</li>
+          <li>No flow test in properties with 15&nbsp;mm lead, shared supplies, or long meter runs.</li>
+        </ul>
+
+        <h2>Putting it together</h2>
+        <ol>
+          <li>Complete room-by-room heat loss → heating kW required.</li>
+          <li>List hot outlets and realistic simultaneous use → required L/min and ΔT.</li>
+          <li>Shortlist boilers whose datasheets meet both, with modulation headroom.</li>
+          <li>Confirm mains dynamic pressure and flow on site.</li>
+          <li>Document choices on Benchmark and customer quote.</li>
+        </ol>
+
+        <p>See also <a href="sizing-and-efficiency.html">sizing &amp; efficiency</a>, <a href="combi-vs-system-vs-regular-boiler.html">combi vs system vs regular</a>, and <a href="combi-boiler-commissioning-checklist.html">commissioning checklist</a>. Manuals and datasheets: <a href="https://boilermanuals.com">BoilerManuals.com</a>.</p>
+
+        <p class="disclaimer">Technical specification must follow the manufacturer’s current documentation for the exact model and fuel type. This guide is for educational purposes for competent heating engineers.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/site-chrome.js"></script>
+</body>
+</html>

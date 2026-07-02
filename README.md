@@ -5,16 +5,23 @@ Static resource site for combination (combi) boiler guides — part of the [MyBo
 ## Site structure
 
 ```
-index.html                    Homepage (hero, guide cards, topics, brands)
-what-is-a-combi-boiler.html   Definition, pros & cons
-choosing-a-combi-boiler.html  Choosing, controls, installation best practice
-sizing-and-efficiency.html    kW sizing, flow temperature, optimisation
-styles.css                    Shared stylesheet (BoilerService.com design language)
-js/site-chrome.js             Shared header, footer, and mobile navigation (edit nav here)
-img/                          Logo mark and combiboiler.jpg
+index.html                              Homepage (grouped guide cards, brands)
+what-is-a-combi-boiler.html             Definition, pros & cons
+combi-vs-system-vs-regular-boiler.html  Combi vs system vs regular decision guide
+choosing-a-combi-boiler.html            Choosing, controls, installation best practice
+sizing-and-efficiency.html              kW sizing, flow temperature, optimisation
+combi-boiler-installation-best-practice.html  Pipework layout and system protection
+reduce-combi-flow-temperature.html      Lower flow temperature for gas savings
+combi-boiler-pressure.html              Pressure, filling loop, topping up
+combi-hot-water-problems.html           No hot water, weak shower troubleshooting
+combi-boiler-commissioning-checklist.html  Engineer commissioning handover
+reading-combi-datasheets.html           Datasheet interpretation and mains flow testing
+styles.css                              Shared stylesheet (BoilerService.com design language)
+js/site-chrome.js                       Shared header, footer, and mobile navigation (edit nav here)
+img/                                    Logo mark and combiboiler.jpg
 favicon.svg
-CNAME                         Custom domain for GitHub Pages
-.nojekyll                     Disables Jekyll processing on GitHub Pages
+CNAME                                   Custom domain for GitHub Pages
+.nojekyll                               Disables Jekyll processing on GitHub Pages
 ```
 
 ## Local preview

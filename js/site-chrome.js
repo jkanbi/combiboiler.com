@@ -3,19 +3,15 @@
 
   var NAV_ITEMS = [
     { id: "what-is", href: "what-is-a-combi-boiler.html", label: "What is a combi?" },
-    { id: "choosing", href: "choosing-a-combi-boiler.html", label: "New Combi" },
-    { id: "sizing", href: "sizing-and-efficiency.html", label: "Sizing" },
-    { id: "installation", href: "combi-boiler-installation-best-practice.html", label: "Installation" },
-    { id: "save-energy", href: "reduce-combi-flow-temperature.html", label: "Save energy" }
+    { id: "choosing", href: "choosing-a-combi-boiler.html", label: "New combi boiler" },
+    { id: "sizing", href: "sizing-and-efficiency.html", label: "Sizing" }
   ];
 
   var FOOTER_LINKS = [
     { href: "index.html", label: "Home" },
     { href: "what-is-a-combi-boiler.html", label: "What is a combi?" },
-    { href: "choosing-a-combi-boiler.html", label: "New Combi" },
+    { href: "choosing-a-combi-boiler.html", label: "New combi boiler" },
     { href: "sizing-and-efficiency.html", label: "Sizing" },
-    { href: "combi-boiler-installation-best-practice.html", label: "Installation" },
-    { href: "reduce-combi-flow-temperature.html", label: "Save energy" },
     { href: "https://myboiler.com", label: "MyBoiler.com", external: true },
     { href: "https://boilermanuals.com", label: "BoilerManuals.com", external: true },
     { href: "https://boilerservice.com", label: "BoilerService.com", external: true }
