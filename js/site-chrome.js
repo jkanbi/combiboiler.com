@@ -7,11 +7,16 @@
     { id: "sizing", href: "sizing-and-efficiency.html", label: "Sizing" }
   ];
 
-  var FOOTER_LINKS = [
-    { href: "index.html", label: "Home" },
+  var FOOTER_GUIDES = [
+    { href: "index.html", label: "All guides" },
     { href: "what-is-a-combi-boiler.html", label: "What is a combi?" },
     { href: "choosing-a-combi-boiler.html", label: "New combi boiler" },
     { href: "sizing-and-efficiency.html", label: "Sizing" },
+    { href: "combi-boiler-pressure.html", label: "Boiler pressure" },
+    { href: "combi-hot-water-problems.html", label: "Hot water problems" }
+  ];
+
+  var FOOTER_SITES = [
     { href: "https://myboiler.com", label: "MyBoiler.com", external: true },
     { href: "https://boilermanuals.com", label: "BoilerManuals.com", external: true },
     { href: "https://boilerservice.com", label: "BoilerService.com", external: true }
@@ -27,7 +32,7 @@
       '<header class="site-header">' +
       '<nav class="navbar" aria-label="Main">' +
       '<a href="index.html" class="navbar-brand">' +
-      '<img src="' + logoSrc + '" class="logo-mark navbar-logo" width="44" height="44" alt="">' +
+      '<img src="' + logoSrc + '" class="logo-mark navbar-logo" width="40" height="40" alt="">' +
       '<span class="navbar-title">CombiBoiler<span class="logo-tld">.com</span></span>' +
       "</a>" +
       '<div class="navbar-actions">' +
@@ -43,19 +48,38 @@
     );
   }
 
-  function renderFooter() {
-    var links = FOOTER_LINKS.map(function (item) {
-      var external = item.external ? ' rel="noopener"' : "";
-      return '<a href="' + item.href + '"' + external + ">" + item.label + "</a>";
-    }).join("");
+  function renderFooterLinks(items) {
+    return items
+      .map(function (item) {
+        var external = item.external ? ' rel="noopener"' : "";
+        return '<a href="' + item.href + '"' + external + ">" + item.label + "</a>";
+      })
+      .join("");
+  }
 
+  function renderFooter() {
     return (
       '<footer class="site-footer">' +
-      '<div class="container footer-inner">' +
-      '<p>&copy; <span id="year"></span> CombiBoiler.com — an extension of <a href="https://myboiler.com" rel="noopener">MyBoiler.com</a></p>' +
-      '<nav aria-label="Footer">' +
-      links +
+      '<div class="container footer-grid">' +
+      '<div class="footer-brand">' +
+      '<p class="footer-logo">CombiBoiler.com</p>' +
+      '<p class="footer-tagline">Practical combi boiler guides for homeowners and heating engineers.</p>' +
+      "</div>" +
+      '<div class="footer-col">' +
+      '<p class="footer-heading">Guides</p>' +
+      '<nav class="footer-links" aria-label="Guides">' +
+      renderFooterLinks(FOOTER_GUIDES) +
       "</nav>" +
+      "</div>" +
+      '<div class="footer-col">' +
+      '<p class="footer-heading">Related sites</p>' +
+      '<nav class="footer-links" aria-label="Related sites">' +
+      renderFooterLinks(FOOTER_SITES) +
+      "</nav>" +
+      "</div>" +
+      "</div>" +
+      '<div class="container footer-bottom">' +
+      '<p>&copy; <span id="year"></span> CombiBoiler.com — part of the <a href="https://myboiler.com" rel="noopener">MyBoiler.com</a> family</p>' +
       "</div>" +
       "</footer>"
     );
